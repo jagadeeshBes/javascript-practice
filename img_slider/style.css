@@ -1,0 +1,51 @@
+.slider{
+   width: 800px;
+    display: flex;
+    overflow-x: scroll;
+    margin: 150px;
+}
+.img-slide img{
+    
+    width: 250px;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.img-slide img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+button{
+    margin-left: 500px;
+  
+}
+.img-slide{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    flex: none;
+}
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.left-btn, .right-btn{
+    width: 5%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    cursor: pointer;
+}
+.left-btn{
+    position: absolute;
+    right:200px;
+    top: 230px;
+}
+.right-btn{
+    position: absolute;
+    left: 100px;
+    top: 230px;
+}
+.slide1{
+    height: 165px;
+}
